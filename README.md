@@ -68,7 +68,7 @@ UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变
 | AT+NAME\<Param\>  |              广播名               |
 | AT+SLEEP\<param\> |               睡眠                |
 
-*更多AT指令请参考[JDY-23 手册](doc/JDY-23-V2.1.pdf)*
+*更多AT指令请参考[JDY-23-V2.1.pdf](doc/JDY-23-V2.1.pdf)*
 
 ### AT指令使用
 
