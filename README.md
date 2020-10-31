@@ -8,7 +8,7 @@ SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性
 
 * 默认串口波特率：9600
 
-  <img src="C:\maix\sp_bt\img\图片.png" alt="图片" style="zoom: 50%;" />
+  <img src="img/图片.png" alt="SP_BT" style="zoom: 50%;" />
 
   *详细特性参考 [SP-BT 规格书 V1.0.pdf](doc/SP-BT 规格书 V1.0.pdf)*
 
