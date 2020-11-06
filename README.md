@@ -1,3 +1,5 @@
+<img src="img/icon_sipeed2.png" style="zoom:80%;" />
+
 # SP_BT模块使用说明
 
 ## 介绍
@@ -8,7 +10,7 @@ SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性
 
 * 默认串口波特率：9600
 
-  <img src="img/图片.png" alt="SP_BT" style="zoom: 50%;" />
+  <img src="img/sp_bt.png" alt="SP_BT" style="zoom: 50%;" />
 
   *详细特性参考[SP-BT 规格书 V1.0.pdf](doc/SP-BT规格书V1.0.pdf)*
 
@@ -21,11 +23,15 @@ SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性
 | 1.8-3.3V | 3.3V  |
 |   GND    |  GND  |
 
+## 引脚图
+
+<img src="img/sp_bt_back.jpg" style="zoom:80%;" />
+
 ## MCU端口配置
 
 ### IO口配置
 
-将原理图对应的IO口配置为串口收发功能号
+将原理图对应的IO口配置为串口收发功能号。
 
 * C示例
 
@@ -43,7 +49,7 @@ SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性
 
 ### UART初始化
 
-UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变SP_BT的波特率，这里默认为9600
+UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变SP_BT的波特率，这里默认为9600。
 
 * C示例
 
@@ -124,4 +130,8 @@ UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变
   ```
 
 *注意发送AT指令后一定要加上\r\n*
+
+## LISENCE
+
+See [LISENCE](LISENCE.md) file
 
