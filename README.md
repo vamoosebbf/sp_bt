@@ -133,10 +133,10 @@ UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改
 
 ## 运行环境
 
-|  语言  |  开发板  | SDK/固件版本                   |
-| :----: | :------: | ------------------------------ |
+|  语言  |  开发板  |          SDK/固件版本          |
+| :----: | :------: | :----------------------------: |
 |   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
-| MaixPy | MaixCube | maixpy v0.5.1                  |
+| MaixPy | MaixCube |         maixpy v0.5.1          |
 
 ## LISENCE
 
