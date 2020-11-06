@@ -1,10 +1,10 @@
 <img src="img/icon_sipeed2.png" style="zoom:80%;" />
 
-# SP_BT模块使用说明
+# SP_BT 模块使用说明
 
 ## 介绍
 
-SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性。
+SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠性。
 
 * 蓝牙版本：支持 BLE 5.0（兼容BLE4.0、BLE4.2）
 
@@ -27,46 +27,46 @@ SP_BT是一款蓝牙串口透传模块，具备超低功率特性和高可靠性
 
 <img src="img/sp_bt_back.jpg" style="zoom:80%;" />
 
-## MCU端口配置
+## MCU 端口配置
 
-### IO口配置
+### IO 口配置
 
 将原理图对应的IO口配置为串口收发功能号。
 
-* C示例
+* C 示例
 
   ```c
   fpioa_set_function(6, FUNC_UART1_RX);
   fpioa_set_function(7, FUNC_UART1_TX);
   ```
 
-* MaixPy示例
+* MaixPy 示例
 
   ```python
   fm.register(6,fm.fpioa.UART1_RX)
   fm.register(7,fm.fpioa.UART1_TX)
   ```
 
-### UART初始化
+### UART  初始化
 
-UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变SP_BT的波特率，这里默认为9600。
+UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改变 SP_BT 的波特率，这里默认为9600。
 
-* C示例
+* C 示例
 
   ```c
   uart_init(UART_DEVICE_1);
   uart_configure(UART_DEVICE_1, 9600, 8, UART_STOP_1, UART_PARITY_NONE);
   ```
 
-* MaixPy示例
+* MaixPy 示例
 
   ```python
   uart = UART(UART.UART1,9600,8,1,0,timeout=1000, read_buf_len=4096)
   ```
 
-## SP_BT配置
+## SP_BT 配置
 
-### AT指令列表
+### AT 指令列表
 
 |       指令        |               功能                |
 | :---------------: | :-------------------------------: |
@@ -76,14 +76,14 @@ UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变
 
 *更多AT指令请参考[JDY-23-V2.1.pdf](doc/JDY-23-V2.1.pdf)*
 
-### AT指令使用
+### AT 指令使用
 
 * 流程
-  1. 发送AT指令
+  1. 发送 AT 指令
   2. 接收数据
   3. 判断是否设置成功
 
-* C示例
+* C 示例
 
   ```c
   //set the name of sp_bt module to MAIXCUBE
@@ -105,7 +105,7 @@ UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变
   }
   ```
 
-* MaixPy示例
+* MaixPy 示例
 
   ```python
   #set the name of sp_bt module to MAIXCUBE
@@ -131,7 +131,14 @@ UART初始化波特率必须与SP_BT波特率一致，可以使用AT指令改变
 
 *注意发送AT指令后一定要加上\r\n*
 
+## 运行环境
+
+|  语言  |  开发板  | SDK/固件版本                   |
+| :----: | :------: | ------------------------------ |
+|   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
+| MaixPy | MaixCube | maixpy v0.5.1                  |
+
 ## LISENCE
 
-See [LISENCE](LISENCE.md) file
+See [LICENSE](LICENSE.md) file
 
