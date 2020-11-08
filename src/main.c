@@ -27,6 +27,7 @@
 
 void io_mux_init(void)
 {
+    // set uart rx/tx func to io_6/7
     fpioa_set_function(6, FUNC_UART1_RX + UART_NUM * 2);
     fpioa_set_function(7, FUNC_UART1_TX + UART_NUM * 2);
 }

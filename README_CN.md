@@ -1,22 +1,22 @@
 <img src="img/icon_sipeed2.png" style="zoom:80%;" />
 
-# SP_BT  Module User Guide
+# SP_BT 模块使用说明
 
-[中文](README_CN.md)
+[English](README.md)
 
-## Introduce
+## 介绍
 
-SP_BT is a Bluetooth serial transmission module with ultra-low power and high reliability.
+SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠性。
 
-* Bluetooth version：Support BLE 5.0 (compatible with BLE4.0, BLE4.2)
+* 蓝牙版本：支持 BLE 5.0（兼容BLE4.0、BLE4.2）
 
-* Default Baud Rate：9600
+* 默认串口波特率：9600
 
   <img src="img/sp_bt.png" alt="SP_BT" style="zoom: 50%;" />
 
-  *See [Specification](doc/SP-BT规格书V1.0.pdf) for more information*
+  *详细特性参考[SP-BT 规格书 V1.0.pdf](doc/SP-BT规格书V1.0.pdf)*
 
-## Mode of connection
+## 接线方式
 
 ![](img/connection.png)
 
@@ -27,17 +27,17 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 |    1.8-3.3V    | 3.3V  |
 |      GND       |  GND  |
 
-## Pin figure
+## 引脚图
 
 <img src="img/sp_bt_back.jpg" style="zoom:80%;" />
 
-## MCU configuration
+## MCU 端口配置
 
-### IO port configuration
+### IO 口配置
 
-Configure IO port corresponding to MCU as UART function pin.
+将原理图对应的IO口配置为串口收发功能号。
 
-* C
+* C 示例
 
   ```c
   // set uart rx/tx func to io_6/7
@@ -45,7 +45,7 @@ Configure IO port corresponding to MCU as UART function pin.
   fpioa_set_function(7, FUNC_UART1_TX + UART_NUM * 2);
   ```
 
-* MaixPy
+* MaixPy 示例
 
   ```python
   # set uart rx/tx func to io_6/7
@@ -53,43 +53,43 @@ Configure IO port corresponding to MCU as UART function pin.
   fm.register(7,fm.fpioa.UART1_TX)
   ```
 
-### UART  initialization
+### UART  初始化
 
-The UART initialization baud rate must be consistent with the SP_BT baud rate. The AT instruction can be used to change the Baud rate of SP_BT, which defaults to 9600.
+UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改变 SP_BT 的波特率，这里默认为9600。
 
-* C
+* C 示例
 
   ```c
   uart_init(UART_DEVICE_1);
   uart_configure(UART_DEVICE_1, 9600, 8, UART_STOP_1, UART_PARITY_NONE);
   ```
 
-* MaixPy
+* MaixPy 示例
 
   ```python
   uart = UART(UART.UART1,9600,8,1,0,timeout=1000, read_buf_len=4096)
   ```
 
-## SP_BT  configuration
+## SP_BT 配置
 
-### AT instruction list
+### AT 指令列表
 
-|       指令        |                      功能                       |
-| :---------------: | :---------------------------------------------: |
-| AT+BAUD\<Param\>  | Baud rates (0-6 represent different baud rates) |
-| AT+NAME\<Param\>  |                 Boardcast name                  |
-| AT+SLEEP\<param\> |                      Sleep                      |
+|       指令        |               功能                |
+| :---------------: | :-------------------------------: |
+| AT+BAUD\<Param\>  | 波特率（0-6）分别代表不同的波特率 |
+| AT+NAME\<Param\>  |              广播名               |
+| AT+SLEEP\<param\> |               睡眠                |
 
-*See [JDY-23-V2.1.pdf](doc/JDY-23-V2.1.pdf) for more information*
+*更多AT指令请参考[JDY-23-V2.1.pdf](doc/JDY-23-V2.1.pdf)*
 
-### AT  instruction usage
+### AT 指令使用
 
-* Process
-  1. Send AT instruction
-  2. Receive the reply
-  3. Determines whether the setup was successful
+* 流程
+  1. 发送 AT 指令
+  2. 接收数据
+  3. 判断是否设置成功
 
-* C
+* C 示例
 
   ```c
   //change the name of sp_bt module to MAIXCUBE
@@ -111,7 +111,7 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
   }
   ```
 
-* MaixPy
+* MaixPy 示例
 
   ```python
   #change the name of sp_bt module to MAIXCUBE
@@ -135,21 +135,21 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
           uart.write("get name success\r\n")
   ```
 
-*Note that you must add \r\n after sending AT instruction*
+*注意发送AT指令后一定要加上\r\n*
 
-## Runtime environments
+## 运行环境
 
-|  Language  |  Board  | SDK/Firmware version |
+|  语言  |  开发板  | SDK/固件版本                   |
 | :----: | :------: | :------------------------------: |
 |   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
 | MaixPy | MaixCube | maixpy v0.5.1                  |
 
-## LICENSE
+## 许可
 
-See [LICENSE](LICENSE.md) fil.
+请查看 [LICENSE](LICENSE.md) 文件.
 
-## Othre information
+## 相关信息
 
-|  Version  | Editor |
+|  版本号  |  编辑人 |
 | :----: | :------: |
-|   v0.1    | Fang Qiurong |
+|   v0.1    | 方秋蓉 |
