@@ -20,7 +20,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 * Default Baud Rate：9600
 
-  <img src="img/sp_bt.png" alt="SP_BT"/>
+  <img src="img/sp_bt.png" alt="SP_BT" height="400"/>
 
   *See [Specification](doc/SP-BT规格书V1.0.pdf) for more information*
 
@@ -37,7 +37,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 ## Pin figure
 
-<img src="img/sp_bt_back.jpg" style="zoom:80%;" />
+<img src="img/sp_bt_back.jpg" height="250"/>
 
 ## MCU configuration
 
