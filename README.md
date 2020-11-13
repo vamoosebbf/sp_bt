@@ -20,7 +20,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 * Default Baud Rate：9600
 
-  <img src="img/sp_bt.png" alt="SP_BT" style="zoom: 50%;" />
+  <img src="img/sp_bt.png" alt="SP_BT"/>
 
   *See [Specification](doc/SP-BT规格书V1.0.pdf) for more information*
 
@@ -82,7 +82,7 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ### AT instruction list
 
-|       Order        |                      Description                       |
+|       Order       |                   Description                   |
 | :---------------: | :---------------------------------------------: |
 | AT+BAUD\<Param\>  | Baud rates (0-6 represent different baud rates) |
 | AT+NAME\<Param\>  |                 Boardcast name                  |
@@ -147,14 +147,16 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ## Result
 
-
+<center class="half">
+	<img src="img/res.png" height="200"/><img src="img/res1.png" height="200"/>
+</center>
 
 ## Runtime environments
 
-|  Language  |  Board  | SDK/Firmware version |
-| :----: | :------: | :------------------------------: |
-|   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
-| MaixPy | MaixCube |         maixpy v0.5.1          |
+| Language |  Board   |      SDK/Firmware version      |
+| :------: | :------: | :----------------------------: |
+|    C     | MaixCube | kendryte-standalone-sdk v0.5.6 |
+|  MaixPy  | MaixCube |         maixpy v0.5.1          |
 
 ## LICENSE
 
@@ -162,7 +164,7 @@ See [LICENSE](LICENSE.md) fil.
 
 ## Othre information
 
-|  Version  | Editor |
-| :----: | :------: |
-|   v0.1    | vamoosebbf |
+| Version |   Editor   |
+| :-----: | :--------: |
+|  v0.1   | vamoosebbf |
 
