@@ -5,12 +5,12 @@
 [中文](README_CN.md)
 
 ## Directory Structure
-| directory | description                                   |
-| --------- | --------------------------------------------- |
-| doc       | Reference documentation                       |
-| img       | Images                                        |
-| script    | Maixpy script example                         |
-| src       | C program example based on the standalone sdk |
+| Directory | Description                                   |
+| :-------: | :-------------------------------------------- |
+|    doc    | Reference documentation                       |
+|    img    | Images                                        |
+|  script   | Maixpy script example                         |
+|    src    | C program example based on the standalone sdk |
 
 ## Module Introduce
 
@@ -147,13 +147,8 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ## Runtime environments
 
-<<<<<<< HEAD
-|  语言  |  开发板  |          SDK/固件版本          |
-| :----: | :------: | :----------------------------: |
-=======
 |  Language  |  Board  | SDK/Firmware version |
 | :----: | :------: | :------------------------------: |
->>>>>>> a8a6191ab99c4a9d2b39ec4d34745e0ce556d363
 |   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
 | MaixPy | MaixCube |         maixpy v0.5.1          |
 
