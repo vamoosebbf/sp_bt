@@ -34,7 +34,7 @@ def main():
         read_data = uart.read()
         if read_data:
             print("recv:", read_data)
-            uart.write(read_data)  # send data
+            uart.write(read_data)  # send data back
             print("wait data: ")
 
 

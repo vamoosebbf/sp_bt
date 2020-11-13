@@ -147,6 +147,8 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ## Result
 
+Using [BLE Utility](bledebugger.apk) to connect the device to do the send and receive test results are as follows:
+
 <center class="third">
 	<img src="img/res.png" height="250"/><img src="img/res1.png" height="250"/>
 </center>
