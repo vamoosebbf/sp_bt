@@ -1,4 +1,4 @@
-<img src="img/icon_sipeed2.png" style="zoom:80%;" />
+<img src="img/icon_sipeed2.png" style="zoom: 80%;" />
 
 # SP_BT 模块使用说明
 
@@ -21,7 +21,7 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 
 * 默认串口波特率：9600
 
-  <img src="img/sp_bt.png" alt="SP_BT" style="zoom: 50%;" />
+  <img src="img/sp_bt.png" alt="SP_BT" />
 
   *详细特性参考[SP-BT 规格书 V1.0.pdf](doc/SP-BT规格书V1.0.pdf)*
 
@@ -39,6 +39,13 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 ## 引脚图
 
 <img src="img/sp_bt_back.jpg" style="zoom:80%;" />
+
+## 指示灯
+
+|   模式   |       状态       |
+| :------: | :--------------: |
+| 等待连接 |  ACT慢闪，STA灭  |
+|  已连接  | ACT常亮，STA常亮 |
 
 ## MCU 端口配置
 
@@ -146,12 +153,18 @@ UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改
 
 *注意发送AT指令后一定要加上\r\n*
 
+## 运行结果
+
+<center class="half">
+	<img src="img/res.png" height="200"/><img src="img/res1.png" height="200"/>
+</center>
+
 ## 运行环境
 
-|  语言  |  开发板  | SDK/固件版本                   |
-| :----: | :------: | :------------------------------: |
+|  语言  |  开发板  |          SDK/固件版本          |
+| :----: | :------: | :----------------------------: |
 |   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
-| MaixPy | MaixCube | maixpy v0.5.1                  |
+| MaixPy | MaixCube |         maixpy v0.5.1          |
 
 ## 许可
 
@@ -159,6 +172,6 @@ UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改
 
 ## 相关信息
 
-|  版本号  |  编辑人 |
-| :----: | :------: |
-|   v0.1    | vamoosebbf |
+| 版本号 |   编辑人   |
+| :----: | :--------: |
+|  v0.1  | vamoosebbf |

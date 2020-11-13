@@ -2,7 +2,7 @@ from machine import UART
 from fpioa_manager import fm
 import time
 
-name = "MAIXDUINO"
+name = "MAIXCUBE"
 
 
 def set_name(uart, name):
