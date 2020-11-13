@@ -26,7 +26,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 ## Mode of connection
 
-![](img/connection.png)
+<img src="img/connection.png" height="200">
 
 |  MCU:FUN(IO)   | SP_BT |
 | :------------: | :---: |
@@ -148,7 +148,7 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 ## Result
 
 <center class="third">
-	<img src="img/res.png" height="200"/><img src="img/res1.png" height="200"/>
+	<img src="img/res.png" height="250"/><img src="img/res1.png" height="250"/>
 </center>
 
 ## Runtime environments
