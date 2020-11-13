@@ -82,7 +82,7 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ### AT instruction list
 
-|       指令        |                      功能                       |
+|       Order        |                      Description                       |
 | :---------------: | :---------------------------------------------: |
 | AT+BAUD\<Param\>  | Baud rates (0-6 represent different baud rates) |
 | AT+NAME\<Param\>  |                 Boardcast name                  |
