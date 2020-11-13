@@ -4,6 +4,15 @@
 
 [English](README.md)
 
+## 目录结构
+
+|  目录  | 描述           |
+| :----: | :------------- |
+|  doc   | 参考文档       |
+|  img   | 图片           |
+| script | MaixPy脚本示例 |
+|  src   | C裸机程序示例  |
+
 ## 介绍
 
 SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠性。
@@ -20,12 +29,12 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 
 ![](img/connection.png)
 
-|  MCU:FUN(IO)   | SP_BT |
-| :------------: | :---: |
-| UART:TXD(IO_7) |  RXD  |
-| USRT:RXD(IO_6) |  TXD  |
-|    1.8-3.3V    | 3.3V  |
-|      GND       |  GND  |
+|  MCU:FUN(IO)  | SP_BT |
+| :-----------: | :---: |
+| UART:TX(IO_7) |  RX   |
+| USRT:RX(IO_6) |  TX   |
+|   1.8-3.3V    | 3.3V  |
+|      GND      |  GND  |
 
 ## 引脚图
 
