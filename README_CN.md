@@ -155,7 +155,7 @@ UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改
 
 ## 运行结果
 
-<center class="half">
+<center class="third">
 	<img src="img/res.png" height="200"/><img src="img/res1.png" height="200"/>
 </center>
 

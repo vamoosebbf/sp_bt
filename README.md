@@ -147,7 +147,7 @@ The UART initialization baud rate must be consistent with the SP_BT baud rate. T
 
 ## Result
 
-<center class="half">
+<center class="third">
 	<img src="img/res.png" height="200"/><img src="img/res1.png" height="200"/>
 </center>
 
