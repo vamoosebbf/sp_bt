@@ -29,7 +29,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 ## Mode of connection
 
-<img src="img/connection.png" height="200">
+<img src="img/connection.png" height="250">
 
 |  MCU:FUN(IO)   | SP_BT |
 | :------------: | :---: |
