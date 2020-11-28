@@ -37,7 +37,7 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 
 ## Pin figure
 
-<img src="img/sp_bt_back.jpg" height="250"/>
+<img src="img/sp_bt_b.jpg" height="250"/>
 
 ## MCU configuration
 
