@@ -24,7 +24,7 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 
 ## 引脚图
 
-<img src="img/back.jpg" height="300" />
+<img src="img/back.jpg" height="250" />
 
 ## 接线方式
 
