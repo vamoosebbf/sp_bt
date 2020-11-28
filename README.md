@@ -12,17 +12,20 @@
 |  script   | Maixpy script example                         |
 |    src    | C program example based on the standalone sdk |
 
-## Module Introduce
+## Introduce
+
+<img src="img/sp_bt.png" style="padding-right:100px;" align="right" width="500"/>
 
 SP_BT is a Bluetooth serial transmission module with ultra-low power and high reliability.
 
 * Bluetooth version：Support BLE 5.0 (compatible with BLE4.0, BLE4.2)
-
 * Default Baud Rate：9600
 
-  <img src="img/sp_bt.png" alt="SP_BT" height="400"/>
-
   *See [Specification](doc/SP-BT规格书V1.0.pdf) for more information*
+
+## Pin figure
+
+<img src="img/back.jpg" height="250"/>
 
 ## Mode of connection
 
@@ -34,10 +37,6 @@ SP_BT is a Bluetooth serial transmission module with ultra-low power and high re
 | USRT:RXD(IO_6) |  TXD  |
 |    1.8-3.3V    | 3.3V  |
 |      GND       |  GND  |
-
-## Pin figure
-
-<img src="img/sp_bt_b.jpg" height="250"/>
 
 ## MCU configuration
 
@@ -156,7 +155,7 @@ Using [BLE Utility](doc/bledebugger.apk) to connect the device to do the send an
 ## Runtime environments
 
 | Language |  Board   |      SDK/Firmware version      |
-| :------: | :------: | :----------------------------: |
+| :------: | :------: | :----------------------------  |
 |    C     | MaixCube | kendryte-standalone-sdk v0.5.6 |
 |  MaixPy  | MaixCube |         maixpy v0.5.1          |
 

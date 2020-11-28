@@ -14,16 +14,17 @@
 |  src   | C裸机程序示例  |
 
 ## 介绍
-
+<img src="img/sp_bt.png" style="padding-right:100px;" align="right" width="500"/>
 SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠性。
 
 * 蓝牙版本：支持 BLE 5.0（兼容BLE4.0、BLE4.2）
-
 * 默认串口波特率：9600
 
-  <img src="img/sp_bt.png" alt="SP_BT" height="400"/>
-
   *详细特性参考[SP-BT 规格书 V1.0.pdf](doc/SP-BT规格书V1.0.pdf)*
+
+## 引脚图
+
+<img src="img/back.jpg" height="250" />
 
 ## 接线方式
 <img src="img/connection.png" height="200">
@@ -34,10 +35,6 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 | USRT:RX(IO_6) |  TX   |
 |   1.8-3.3V    | 3.3V  |
 |      GND      |  GND  |
-
-## 引脚图
-
-<img src="img/sp_bt_back.jpg" height="250" />
 
 ## 指示灯
 
@@ -50,7 +47,7 @@ SP_BT 是一款蓝牙串口透传模块，具备超低功率特性和高可靠�
 
 ### IO 口配置
 
-将原理图对应的IO口配置为串口收发功能号。
+将原理图对应的 IO 口配置为串口收发功能号。
 
 * C 示例
 
@@ -162,8 +159,8 @@ UART 初始化波特率必须与 SP_BT 波特率一致，可以使用AT指令改
 
 ## 运行环境
 
-|  语言  |  开发板  |          SDK/固件版本          |
-| :----: | :------: | :----------------------------: |
+|  语言  |  开发板    |          SDK/固件版本           |
+| :----: | :------: | :----------------------------  |
 |   C    | MaixCube | kendryte-standalone-sdk v0.5.6 |
 | MaixPy | MaixCube |         maixpy v0.5.1          |
 
