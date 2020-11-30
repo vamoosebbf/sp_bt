@@ -1,3 +1,7 @@
+####################################################
+#Phenomenon: Send back received data
+####################################################
+
 from machine import UART
 from fpioa_manager import fm
 import time
@@ -26,7 +30,6 @@ if __name__ == "__main__":
     uart = UART(UART.UART1, 9600, 8, 1, 0, timeout=1000, read_buf_len=4096)
 
     set_name(uart, name)
-
     print("wait data: ")
     while True:
         read_data = uart.read()
