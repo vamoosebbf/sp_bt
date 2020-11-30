@@ -4,10 +4,9 @@ import time
 
 name = "MAIXCUBE"
 
-
 def set_name(uart, name):
     for i in range(200):
-        # change the name to MAIXDUINO
+        # change the name to MAIXCUBE
         uart.write("AT+NAME{}\r\n".format(name))
         time.sleep_ms(200)
         read_data = uart.read()
@@ -18,8 +17,7 @@ def set_name(uart, name):
                 print("set success")
                 break
 
-
-def main():
+if __name__ == "__main__":
     # set uart rx/tx func to io_6/7
     fm.register(7, fm.fpioa.UART1_TX)
     fm.register(6, fm.fpioa.UART1_RX)
@@ -36,6 +34,4 @@ def main():
             print("recv:", read_data)
             uart.write(read_data)  # send data back
             print("wait data: ")
-
-
-main()
+            
